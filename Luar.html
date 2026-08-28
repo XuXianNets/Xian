@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Web Saya</title>
+    <style>
+        /* Reset & Base Style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigasi */
+        header {
+            background-color:White;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        nav a {
+            text-decoration: none;
+            color: Black ;
+            margin-left: 5px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            
+        }
+        .btn-nav-login {
+            background-color: #007BFF;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 5px;
+        }
+        .btn-nav-login:link {
+            background-color: #007BFF;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            max-width: 600px;
+        }
+        .btn-hero {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-hero:hover {
+            background-color: #218838;
+        }
+
+        /* Konten Fitur */
+        .services {
+            padding: 60px 5%;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #222;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            width: 300px;
+            text-align: left;
+            border-top: 4px solid #007BFF;
+        }
+        .card h3 {
+            margin-bottom: 12px;
+            color: #333;
+        }
+        .card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Navigasi atas -->
+    <header>
+        <div class="logo">WEB EDAN</div>
+        <nav>
+            <a href="daftar.html" class="btn-nav-login">Login akun</a>
+            <a href="" class="btn-nav-login">Kembali</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Utama / Banner -->
+    <section class="hero">
+        <h1>Selamat Datang di Website Aku</h1>
+        <p>Solusi Buat Kalian Kalau lagi Bosen ntah Mau ngapain.</p>
+        <a href="login.html" class="btn-hero">Masuk Sekarang</a>
+    </section>
+
+    <!-- Bagian Layanan / Fitur -->
+    <section class="services">
+        <h2>Layanan Unggulan</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Pilihan Pertama</h3>
+                <p>Cara agar kalian tidak cepat bosan.</p>
+                <a href="Pertama.html">Click bagian ini</a>
+                
+            </div>
+            <div class="card">
+                <h3>Pilihan kedua</h3>
+                <p>Kalau kalian ketika lagi putus cinta dan semacamnya. </p>
+                <a href="Kedua.html">Click bagian ini</a>
+                
+            </div>
+            <div class="card">
+                <h3>Penyelesaian</h3>
+                <p>Semua yang kalian butuhkan ada di sini.</p>
+                <a href="ketiga.html">Click bagian ini</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Footer bawah -->
+    <footer>
+        <p>&copy; 2026 WebSaya. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
